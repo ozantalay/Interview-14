@@ -32,7 +32,7 @@ const Pagination = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="flex justify-center">Loading...</div>;
   }
   if (error) {
     return <div>{error}</div>;
@@ -56,7 +56,7 @@ const Pages = ({ content, itemsPerPage }) => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center mt-20">
       <div className="user-table">
         <div className="user-table-header flex justify-between gap-x font-bold mb-4">
           <span>İsim</span>
